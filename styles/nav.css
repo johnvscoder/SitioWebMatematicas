@@ -1,0 +1,44 @@
+:root {
+    --menu-fondo: #058;
+}
+
+.ul-menu {
+    background: var(--menu-fondo);
+    user-select: none;
+    list-style: none;
+    display: flex;
+}
+
+.logo {
+    width: 100px;
+    margin: 0 20px;
+}
+
+.a-menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom-color: var(--menu-fondo);
+    transition: background-color 0.5s, border-bottom-color 0.5s;
+    padding: 0 20px;
+}
+
+.a-menu:hover {
+    background: #07a;
+    border-bottom: 2px solid #fff;
+    
+}
+
+
+.ul-menu__li {
+    color: #fff;
+}
+
+
+
+.ul-menu__li-submenu {
+    display: none;
+}
