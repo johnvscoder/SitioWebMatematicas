@@ -2,11 +2,19 @@
     --menu-fondo: #058;
 }
 
-.ul-menu {
+.nav-menu {
     background: var(--menu-fondo);
+    display: flex;
+}
+
+.ul-menu {
     user-select: none;
     list-style: none;
     display: flex;
+}
+
+.ul-menu__li-submenu:nth-child(4) {
+    background: red;
 }
 
 .logo {
@@ -24,6 +32,7 @@
     border-bottom-color: var(--menu-fondo);
     transition: background-color 0.5s, border-bottom-color 0.5s;
     padding: 0 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .a-menu:hover {

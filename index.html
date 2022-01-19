@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/poster.css">
     <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/seccion.css">
 </head>
 <body>
     <header>
-        <nav>
-            
+        <nav class="nav-menu">
+            <img class="logo" src="/images/logo.webp" alt="Logotipo del sitio web">
             <ul class="ul-menu">
-                <img class="logo" src="/images/logo.png" alt="Logotipo del sitio web">
                 <li class="ul-menu__li"><a class="a-menu" href=""><span class="span-menu">Inicio</span></a></li>
                 <li class="ul-menu__li"><a class="a-menu" href=""><span class="span-menu">Índice</span></a></li>
                 <li class="ul-menu__li ul-menu__li--submenu">
@@ -66,10 +70,54 @@
         </nav>
     </header>
     <main>
-
+        <section class="div-poster">
+            <h1 class="div-poster__titulo">Aprende temas de matemáticas</h1>
+            <p class="div-poster__contenido">Aquí encontrarás tutoriales de diversos temas de matemáticas.
+                También encontrarás ejercicios resueltos y ejercicios de práctica.
+            </p>
+        </section>
+        <section class="seccion">
+            <h2 class="seccion__titulo">Álgebra</h2>
+            <section class="seccion__subseccion">
+                <h2 class="seccion__subseccion-titulo">Ecuaciones lineales</h2>
+                <p class="seccion__subseccion-contenido">Aprende a resolver ecuaciones lineales desde las sencillas hasta las más difíciles</p>
+                <a class="seccion__subseccion-enlace"href="https://www.wikipedia.com?dsfijsd=rhhr8">Ir al tutorial</a>
+            </section>
+            <section class="seccion__subseccion">
+                <h2 class="seccion__subseccion-titulo">Polinomios</h2>
+                <p class="seccion__subseccion-contenido">Aprende los conceptos básicos relacionados con polinomios</p>
+                <a class="seccion__subseccion-enlace" href="">Ir al tutorial</a>
+            </section>
+        </section>
+        <section class="seccion">
+            <h2 class="seccion__titulo">Geometría</h2>
+            <section class="seccion__subseccion">
+                <h2 class="seccion__subseccion-titulo">Términos primitivos</h2>
+                <p class="seccion__subseccion-contenido">Comprende en qué consisten exactamente los térmitos primitivos de la geometría</p>
+                <a class="seccion__subseccion-enlace"href="https://www.wikipedia.com?dsfijsd=rhhr8">Ir al tutorial</a>
+            </section>
+            <section class="seccion__subseccion">
+                <h2 class="seccion__subseccion-titulo">Ángulos</h2>
+                <p class="seccion__subseccion-contenido">Aprende los conceptos de ángulos y sus propiedades</p>
+                <a class="seccion__subseccion-enlace" href="">Ir al tutorial</a>
+            </section>
+        </section>
+        <section class="seccion">
+            <h2 class="seccion__titulo">Cálculo</h2>
+            <section class="seccion__subseccion">
+                <h2 class="seccion__subseccion-titulo">Funciones</h2>
+                <p class="seccion__subseccion-contenido">Aprende los conceptos de funciones necesarios para estudiar cálculo</p>
+                <a class="seccion__subseccion-enlace"href="https://www.wikipedia.com?dsfijsd=rhhr8">Ir al tutorial</a>
+            </section>
+            <section class="seccion__subseccion">
+                <h2 class="seccion__subseccion-titulo">Límites</h2>
+                <p class="seccion__subseccion-contenido">Aprende la definición intuitiva y la formal de límite</p>
+                <a class="seccion__subseccion-enlace" href="">Ir al tutorial</a>
+            </section>
+        </section>
     </main>
     <footer>
-
+        
     </footer>
 </body>
 </html>

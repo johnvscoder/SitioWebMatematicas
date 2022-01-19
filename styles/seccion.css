@@ -1,0 +1,28 @@
+.seccion {
+    margin: 5px 5px 0;
+    background-color: #9cf;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.seccion__titulo {
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+.seccion__subseccion {
+    margin: 5px 5px 0;
+    background: #7ad;
+    padding: 5px;
+}
+
+.seccion__subseccion-titulo {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.seccion__subseccion-enlace {
+    text-decoration: none; 
+    color: #115;
+}

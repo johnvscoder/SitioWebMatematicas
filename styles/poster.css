@@ -1,0 +1,15 @@
+.div-poster {
+    background: #9cf;
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px 5px 0;
+}
+
+.div-poster__titulo {
+    text-align: center;
+    font-size: 50px;
+}
+
+.div-poster__contenido {
+    text-align: center;
+    font-size: 20px;
+}
