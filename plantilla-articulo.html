@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - EduMat</title>
+    <title>Plantilla - EduMat</title>
     <link rel="stylesheet" href="/styles/nav.css">
-    <link rel="stylesheet" href="/styles/poster.css">
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/seccion.css">
     <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/plantilla/plantilla.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <header>
@@ -71,56 +74,28 @@
         </nav>
     </header>
     <main>
-        <section class="div-poster">
-            <h1 class="div-poster__titulo">Aprende temas de matemáticas</h1>
-            <p class="div-poster__contenido">Aquí encontrarás tutoriales de diversos temas de matemáticas.
-                También encontrarás ejercicios resueltos y ejercicios de práctica.
-            </p>
-        </section>
-        <section class="seccion">
-            <h2 class="seccion__titulo">Álgebra</h2>
-            <section class="seccion__subseccion">
-                <h2 class="seccion__subseccion-titulo">Ecuaciones lineales</h2>
-                <p class="seccion__subseccion-contenido">Aprende a resolver ecuaciones lineales desde las sencillas hasta las más difíciles</p>
-                <a class="seccion__subseccion-enlace" href="https://www.wikipedia.com?dsfijsd=rhhr8">Ir al tutorial</a>
+        <article class="articulo">
+            <h1 class="articulo__titulo">Titulo</h1>
+            <span class="articulo__fecha">Fecha de publicación</span>
+            <section class="articulo__seccion">
+                <h2 class="articulo__seccion-titulo">Subtema</h2>
+                <p class="articulo__seccion-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed dolorum nam aliquid error eius quo nesciunt, illo cumque laborum sint quidem, earum consequatur qui culpa veniam autem tempora rem?</p>
+                <figure class="articulo__seccion-figura">
+                    <img src="/plantilla-articulo.html" alt="Foto de plantilla">
+                    <figcaption>Descripcion de la foto</figcaption>
+                </figure>
+                <p class="articulo__seccion-texto">
+                    When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+                    \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+                  </p>
             </section>
-            <section class="seccion__subseccion">
-                <h2 class="seccion__subseccion-titulo">Polinomios</h2>
-                <p class="seccion__subseccion-contenido">Aprende los conceptos básicos relacionados con polinomios</p>
-                <a class="seccion__subseccion-enlace" href="">Ir al tutorial</a>
-            </section>
-        </section>
-        <section class="seccion">
-            <h2 class="seccion__titulo">Geometría</h2>
-            <section class="seccion__subseccion">
-                <h2 class="seccion__subseccion-titulo">Términos primitivos</h2>
-                <p class="seccion__subseccion-contenido">Comprende en qué consisten exactamente los térmitos primitivos de la geometría</p>
-                <a class="seccion__subseccion-enlace" href="https://www.wikipedia.com?dsfijsd=rhhr8">Ir al tutorial</a>
-            </section>
-            <section class="seccion__subseccion">
-                <h2 class="seccion__subseccion-titulo">Ángulos</h2>
-                <p class="seccion__subseccion-contenido">Aprende los conceptos de ángulos y sus propiedades</p>
-                <a class="seccion__subseccion-enlace" href="">Ir al tutorial</a>
-            </section>
-        </section>
-        <section class="seccion">
-            <h2 class="seccion__titulo">Cálculo</h2>
-            <section class="seccion__subseccion">
-                <h2 class="seccion__subseccion-titulo">Funciones</h2>
-                <p class="seccion__subseccion-contenido">Aprende los conceptos de funciones necesarios para estudiar cálculo</p>
-                <a class="seccion__subseccion-enlace" href="https://www.wikipedia.com?dsfijsd=rhhr8">Ir al tutorial</a>
-            </section>
-            <section class="seccion__subseccion">
-                <h2 class="seccion__subseccion-titulo">Límites</h2>
-                <p class="seccion__subseccion-contenido">Aprende la definición intuitiva y la formal de límite</p>
-                <a class="seccion__subseccion-enlace" href="">Ir al tutorial</a>
-            </section>
-        </section>
+        </article>
+        
     </main>
-    <footer class="footer">
+    <header>
         <span>Creado por John Villanueva</span>
-        <br>
-        <a class="footer__creditos" href="https://www.flaticon.es/iconos-gratis/matematicas" title="matemáticas iconos">Matemáticas iconos creados por kerismaker - Flaticon</a>
-    </footer>
+    </header>
+
+    
 </body>
 </html>

@@ -13,13 +13,9 @@
     display: flex;
 }
 
-.ul-menu__li-submenu:nth-child(4) {
-    background: red;
-}
-
 .logo {
-    width: 100px;
-    margin: 0 20px;
+    height: 40px;
+    margin: 5px 10px;
 }
 
 .a-menu {
@@ -46,8 +42,32 @@
     color: #fff;
 }
 
-
+.ul-menu__li-submenu {
+    position: relative;
+}
 
 .ul-menu__li-submenu {
+    position: absolute;
     display: none;
+    list-style: none;
+    background: #def;
+    padding: 5px;
 }
+
+.ul-menu__li-submenu-li {
+    height: 30px;
+}
+
+.a-submenu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: #246;
+    
+}
+
+.ul-menu__li--submenu:hover > .ul-menu__li-submenu {
+    display: inline;
+}
+

@@ -1,3 +1,7 @@
+:root {
+    --enlaces-color: #115;
+}
+
 .seccion {
     margin: 5px 5px 0;
     background-color: #9cf;
@@ -24,5 +28,10 @@
 
 .seccion__subseccion-enlace {
     text-decoration: none; 
-    color: #115;
+    color: var(--enlaces-color);
+}
+
+.footer__creditos {
+    text-decoration: none;
+    color: var(--enlaces-color);
 }
