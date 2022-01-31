@@ -4,123 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - EduMat</title>
-    <link rel="stylesheet" href="/styles/nav.css">
-    <link rel="stylesheet" href="/styles/poster.css">
     <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/seccion.css">
-    <link rel="stylesheet" href="/styles/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="nav-menu">
-            <img class="logo" src="/images/matematicas-logo.webp" alt="Logotipo del sitio web">
-            <ul class="ul-menu">
-                <li class="ul-menu__li"><a class="a-menu" href=""><span class="span-menu">Inicio</span></a></li>
-                <li class="ul-menu__li"><a class="a-menu" href=""><span class="span-menu">Índice</span></a></li>
-                <li class="ul-menu__li ul-menu__li--submenu">
-                    <a class="a-menu" href=""><span class="span-menu">Álgebra</span></a>
-                    <ul class="ul-menu__li-submenu">
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Ver todos los temas</span></a></li>
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Conjuntos numéricos</span></a></li>
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Polinomios</span></a></li>
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Ecuaciones</span></a></li>
-                    </ul>
-                </li>
-                <li class="ul-menu__li ul-menu__li--submenu">
-                    <a class="a-menu" href=""><span class="span-menu">Aritmética</span></a>
-                    <ul class="ul-menu__li-submenu">
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Ver todos los temas</span></a></li>
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Números naturales</span></a></li>
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Nuḿeros enteros</span></a></li>
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Múltiplos y divisores</span></a></li>
-                    </ul>
-                </li>
-                <li class="ul-menu__li ul-menu__li--submenu">
-                    <a class="a-menu" href=""><span class="span-menu">Geometría</span></a>
-                    <ul class="ul-menu__li-submenu">
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Ver todos los temas</span></a></li>
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Términos primitivos</span></a></li>
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Segmentos, rayos y rectas</span></a></li>
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Ángulos</span></a></li>
-                    </ul>
-                </li>
-                <li class="ul-menu__li ul-menu__li--submenu">
-                    <a class="a-menu" href=""><span class="span-menu">Cálculo</span></a>
-                    <ul class="ul-menu__li-submenu">
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Ver todos los temas</span></a></li>
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Funciones</span></a></li>
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Límites</span></a></li>
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Teoremas de límites</span></a></li>
-                    </ul>
-                </li>
-                <li class="ul-menu__li ul-menu__li--submenu">
-                    <a class="a-menu" href=""><span class="span-menu">Más</span></a>
-                    <ul class="ul-menu__li-submenu">
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Ver todos los temas</span></a></li>
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Temas de álgebra lineal</span></a></li>
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Temas de lógica matemática</span></a></li>
-                        <li class="ul-menu__li-submenu-li"><a class="a-submenu" href=""><span class="span-submenu">Temas de teoría de conjuntos</span></a></li>
-                    </ul>
-                </li>
-                <li class="ul-menu__li"><a class="a-menu" href=""><span class="span-menu">Sobre mí</span></a></li>
-                <li class="ul-menu__li"><a class="a-menu" href=""><span class="span-menu">Contacto</span></a></li>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"><a class="nav__a" href="">Inicio</a></li>
+                <li class="nav__li"><a class="nav__a" href="">Índice</a></li>
+                <li class="nav__li"><a class="nav__a" href="">Álgebra</a></li>
+                <li class="nav__li"><a class="nav__a" href="">Aritmética</a></li>
+                <li class="nav__li"><a class="nav__a" href="">Geometría</a></li>
+                <li class="nav__li"><a class="nav__a" href="">Álgebra Lineal</a></li>
+                <li class="nav__li"><a class="nav__a" href="">Cálculo</a></li>
+                <li class="nav__li"><a class="nav__a" href="">Sobre mí</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="div-poster">
-            <h1 class="div-poster__titulo">Aprende temas de matemáticas</h1>
-            <p class="div-poster__contenido">Aquí encontrarás tutoriales de diversos temas de matemáticas.
-                También encontrarás ejercicios resueltos y ejercicios de práctica.
-            </p>
-        </section>
-        <section class="seccion">
-            <h2 class="seccion__titulo">Álgebra</h2>
-            <section class="seccion__subseccion">
-                <h2 class="seccion__subseccion-titulo">Ecuaciones lineales</h2>
-                <p class="seccion__subseccion-contenido">Aprende a resolver ecuaciones lineales desde las sencillas hasta las más difíciles</p>
-                <a class="seccion__subseccion-enlace" href="">Ir al tutorial</a>
-            </section>
-            <section class="seccion__subseccion">
-                <h2 class="seccion__subseccion-titulo">Polinomios</h2>
-                <p class="seccion__subseccion-contenido">Aprende los conceptos básicos relacionados con polinomios</p>
-                <a class="seccion__subseccion-enlace" href="">Ir al tutorial</a>
-            </section>
-        </section>
-        <section class="seccion">
-            <h2 class="seccion__titulo">Geometría</h2>
-            <section class="seccion__subseccion">
-                <h2 class="seccion__subseccion-titulo">Términos primitivos</h2>
-                <p class="seccion__subseccion-contenido">Comprende en qué consisten exactamente los térmitos primitivos de la geometría</p>
-                <a class="seccion__subseccion-enlace" href="">Ir al tutorial</a>
-            </section>
-            <section class="seccion__subseccion">
-                <h2 class="seccion__subseccion-titulo">Ángulos</h2>
-                <p class="seccion__subseccion-contenido">Aprende los conceptos de ángulos y sus propiedades</p>
-                <a class="seccion__subseccion-enlace" href="">Ir al tutorial</a>
-            </section>
-        </section>
-        <section class="seccion">
-            <h2 class="seccion__titulo">Cálculo</h2>
-            <section class="seccion__subseccion">
-                <h2 class="seccion__subseccion-titulo">Funciones</h2>
-                <p class="seccion__subseccion-contenido">Aprende los conceptos de funciones necesarios para estudiar cálculo</p>
-                <a class="seccion__subseccion-enlace" href="">Ir al tutorial</a>
-            </section>
-            <section class="seccion__subseccion">
-                <h2 class="seccion__subseccion-titulo">Límites</h2>
-                <p class="seccion__subseccion-contenido">Aprende la definición intuitiva y la formal de límite</p>
-                <a class="seccion__subseccion-enlace" href="">Ir al tutorial</a>
-            </section>
-        </section>
-    </main>
-    <footer class="footer">
-        <span>Creado por John Villanueva</span>
-        <br>
-        <a class="footer__creditos" href="https://www.flaticon.es/iconos-gratis/matematicas" title="matemáticas iconos">Matemáticas iconos creados por kerismaker - Flaticon</a>
-    </footer>
 </body>
 </html>
