@@ -1,15 +1,86 @@
-.div-poster {
-    background: #9cf;
-    font-family: 'Open Sans', sans-serif;
-    margin: 5px 5px 0;
+.poster {
+    background: var(--nav-azul-oscuro);
+    padding: 15px 5px;
+    font-family: 'Dosis', sans-serif;
+    color: #fff;
+    text-align: center;
+
 }
 
-.div-poster__titulo {
-    text-align: center;
-    font-size: 50px;
+.poster__titulo {
+    margin-bottom: 5px;
+    font-size: 40px;
 }
 
-.div-poster__contenido {
-    text-align: center;
+.poster__p {
     font-size: 20px;
+}
+
+.poster__div:nth-child(1) {
+    animation: poster__div1 24s infinite;
+}
+
+.poster__div:nth-child(2) {
+    animation: poster__div2 24s infinite;
+}
+
+.poster__div:nth-child(3) {
+    animation: poster__div3 24s infinite;
+}
+
+@keyframes poster__div1 {
+    0% {
+        opacity: 0;
+    }
+    2% {
+        opacity: 1;
+    }
+    31% {
+        opacity: 1;
+    }
+    33% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes poster__div2 {
+    0% {
+        opacity: 0;
+    }
+    33% {
+        opacity: 0;
+    }
+    35% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 1;
+    }
+    67% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes poster__div3 {
+    0% {
+        opacity: 0;
+    }
+    67% {
+        opacity: 0;
+    }
+    69% {
+        opacity: 1;
+    }
+    98% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

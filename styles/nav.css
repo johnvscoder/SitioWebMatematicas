@@ -1,3 +1,9 @@
+:root {
+    --nav-azul-oscuro: #00167c;
+    --nav-azul-mas-oscuro: red;
+    --color-normal-texto: #fff;
+}
+
 .nav {
     background-image: url('/images/header.svg');
     background-size: cover;
@@ -12,19 +18,21 @@
     display: inline-block;
     transition: background-color 0.2s;
     border-radius: 7px;
+    position: relative;
+    z-index: 50;
 }
 
 .nav__a {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
+    color: var(--color-normal-texto);
     font-size: 20px;
     padding: 10px 20px;
     font-family: 'Dosis', sans-serif;
 }
 
 .nav__li:hover {
-    background: #fff;
+    background: var(--color-normal-texto);
 }
 
 .nav__li:hover > .nav__a {
@@ -54,11 +62,11 @@
 .subnav__a {
     display: block;
     text-decoration: none;
-    background: #fff;
-    color: #00167c;
+    background: var(--color-normal-texto);
+    color: var(--nav-azul-oscuro);
     padding: 10px;
-    border-left: 1px solid #00167c;
-    border-right: 1px solid #00167c;
+    border-left: 1px solid var(--nav-azul-oscuro);
+    border-right: 1px solid var(--nav-azul-oscuro);
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
 }
@@ -66,19 +74,19 @@
 .subnav__li:first-child .subnav__a {
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    border-top: 1px solid #00167c;
+    border-top: 1px solid var(--nav-azul-oscuro);
 }
 
 .subnav__li:last-child .subnav__a {
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
-    border-bottom: 1px solid #00167c;
+    border-bottom: 1px solid var(--nav-azul-oscuro);
 }
 
 
 
 
 .subnav__a:hover {
-    background: #00167c;
-    color: #fff;
+    background: var(--nav-azul-oscuro);
+    color: var(--color-normal-texto);
 }
