@@ -1,0 +1,18 @@
+
+.box {
+    position: absolute;
+    margin: auto;
+    
+    right: 0;
+    
+    left: 0;
+    background: red;
+    width: 100px;
+    height: 100px;
+}
+/* .box{
+    position:absolute;
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+ } */

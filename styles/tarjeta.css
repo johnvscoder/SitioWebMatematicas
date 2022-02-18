@@ -1,0 +1,35 @@
+.tarjeta {
+    font-family: 'Dosis', sans-serif;
+    margin: 10px;
+    padding: 10px;
+    background: #fff;
+    color: var(--nav-azul-oscuro);
+    border: 1px solid var(--nav-azul-oscuro);
+    border-radius: var(--radio-borde);
+}
+
+.tarjeta__titulo {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.tarjeta__contenido {
+    font-size: 20px;
+}
+
+.tarjeta__enlace {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tarjeta__enlace:link {
+    color: var(--nav-azul-claro);
+}
+
+.tarjeta__enlace:visited {
+    color: var(--nav-azul-oscuro);
+}
+
+.tarjeta__enlace:hover {
+    text-shadow: 0 0 1px var(--nav-azul-claro);
+}

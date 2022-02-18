@@ -1,10 +1,18 @@
 .poster {
-    background: var(--nav-azul-oscuro);
+    display: flex;
+    background: #fff;
     padding: 15px 5px;
     font-family: 'Dosis', sans-serif;
-    color: #fff;
+    color: var(--nav-azul-oscuro);
     text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
 
+h1 {
+    margin-top: 0;
 }
 
 .poster__titulo {
@@ -14,6 +22,10 @@
 
 .poster__p {
     font-size: 20px;
+}
+
+.poster__div {
+    position: absolute;
 }
 
 .poster__div:nth-child(1) {

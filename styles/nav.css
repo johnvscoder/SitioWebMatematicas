@@ -1,7 +1,8 @@
 :root {
     --nav-azul-oscuro: #00167c;
-    --nav-azul-mas-oscuro: red;
+    --nav-azul-claro: #1018b3;
     --color-normal-texto: #fff;
+    --radio-borde: 7px;
 }
 
 .nav {
@@ -17,7 +18,7 @@
     margin: 5px 0px 5px 5px;
     display: inline-block;
     transition: background-color 0.2s;
-    border-radius: 7px;
+    border-radius: var(--radio-borde);
     position: relative;
     z-index: 50;
 }
@@ -72,14 +73,14 @@
 }
 
 .subnav__li:first-child .subnav__a {
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+    border-top-left-radius: var(--radio-borde);
+    border-top-right-radius: var(--radio-borde);
     border-top: 1px solid var(--nav-azul-oscuro);
 }
 
 .subnav__li:last-child .subnav__a {
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: var(--radio-borde);
+    border-bottom-right-radius: var(--radio-borde);
     border-bottom: 1px solid var(--nav-azul-oscuro);
 }
 
