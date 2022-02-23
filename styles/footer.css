@@ -1,6 +1,53 @@
 .footer {
-    background: #9cf;
-    margin: 5px;
-    direction: rtl;
-    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('/images/header.svg');
+    padding: 15px 0;
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+}
+
+.footer__autor {
+    font-style: normal;
+    flex-basis: 100%;
+    padding: 30px 10px 10px;
+}
+
+.footer__copyright {
+    padding: 0 10px 10px;
+}
+.footer__redes {
+    flex-grow: 0;
+}
+
+.footer__redes-icono {
+    color: #fff;
+}
+
+.footer__redes-li {
+    display: inline-block;
+    padding: 15px 20px 20px;
+}
+
+.footer__documentos {
+    flex-grow: 1;
+}
+
+.footer__documentos-a {
+    text-decoration: none;
+}
+
+.footer__documentos-a {
+    color: #fff;
+}
+
+
+
+.footer__documentos-li {
+    padding: 10px;
+}
+
+.footer__documentos-ul {
+    list-style-type: none;
 }
