@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     background-image: url('/images/header.svg');
-    padding: 15px 0;
+    background-size: cover;
     color: #fff;
     font-family: 'Dosis', sans-serif;
     font-size: 18px;
@@ -11,14 +11,19 @@
 .footer__autor {
     font-style: normal;
     flex-basis: 100%;
-    padding: 30px 10px 10px;
+    margin: 30px 0 10px 40px;
 }
 
 .footer__copyright {
-    padding: 0 10px 10px;
+    margin: 0 0 20px 40px;
 }
 .footer__redes {
     flex-grow: 0;
+    margin: 40px 40px 0 0;
+}
+
+.footer__redes-ul {
+    margin-top: 20px;
 }
 
 .footer__redes-icono {
@@ -27,11 +32,12 @@
 
 .footer__redes-li {
     display: inline-block;
-    padding: 15px 20px 20px;
+    margin-right: 5px;
 }
 
 .footer__documentos {
     flex-grow: 1;
+    margin: 40px 0 0 40px;
 }
 
 .footer__documentos-a {
@@ -45,7 +51,11 @@
 
 
 .footer__documentos-li {
-    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.footer__documentos-li:hover {
+    text-shadow: 0 0 3px var(--tarjeta-color-sombra);
 }
 
 .footer__documentos-ul {

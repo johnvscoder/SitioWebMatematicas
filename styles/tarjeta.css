@@ -1,8 +1,13 @@
+:root {
+    --tarjeta-color-sombra: rgb(110, 110, 255);
+}
+
 .tarjeta {
     font-family: 'Dosis', sans-serif;
     margin: 10px;
     padding: 10px;
-    background: linear-gradient(to bottom, #fff, var(--nav-azul-mas-claro));
+    /* background: linear-gradient(to bottom, #fff, var(--nav-azul-mas-claro)); */
+    background: #fff;
     color: var(--nav-azul-oscuro);
     border: 1px solid var(--nav-azul-oscuro);
     border-radius: var(--radio-borde);
@@ -18,7 +23,8 @@
 }
 
 .tarjeta__enlace {
-    text-decoration: none;
+    font-size: 20px;
+    text-decoration: underline solid var(--nav-azul-oscuro);
     font-weight: bold;
 }
 
@@ -31,5 +37,5 @@
 }
 
 .tarjeta__enlace:hover {
-    text-shadow: 0 0 1px var(--nav-azul-claro);
+    text-shadow: 0 0 3px var(--tarjeta-color-sombra);
 }
