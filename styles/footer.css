@@ -30,10 +30,15 @@
     color: #fff;
 }
 
+.footer__redes-icono:hover {
+    filter: drop-shadow(0 0 3px var(--tarjeta-color-sombra));
+}
+
 .footer__redes-li {
     display: inline-block;
     margin-right: 5px;
 }
+
 
 .footer__documentos {
     flex-grow: 1;
@@ -54,7 +59,7 @@
     margin-bottom: 10px;
 }
 
-.footer__documentos-li:hover {
+.footer__documentos-a:hover {
     text-shadow: 0 0 3px var(--tarjeta-color-sombra);
 }
 
