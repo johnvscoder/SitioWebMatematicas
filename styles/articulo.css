@@ -1,0 +1,47 @@
+:root {
+    --color-cabecera: #888;
+    --fuente-size: 20px;
+}
+
+.articulo {
+    font-family: 'Dosis', sans-serif;
+    font-size: var(--fuente-size);
+    margin-bottom: 20px;
+}
+
+.articulo__bold {
+    font-weight: bold;
+}
+
+.articulo__titulo {
+    font-size: 32px;
+    margin: 20px 0 10px 10px;
+}
+
+.articulo__cabecera {
+    margin: 0 0 20px 10px;
+    color: var(--color-cabecera);
+    font-style: italic;
+    font-size: 16px;
+}
+
+.articulo__contenido {
+    margin-left: 10px;
+}
+
+.articulo__seccion-titulo {
+   font-size: 25px;
+   margin-bottom: 10px;
+}
+
+.articulo__ul {
+    margin: 10px 0;
+}
+
+.articulo__ul-li {
+    margin: 5px 0;
+}
+
+.articulo__margin {
+    margin-left: 25px;
+}

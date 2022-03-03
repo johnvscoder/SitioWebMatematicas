@@ -4,6 +4,7 @@
     --nav-azul-mas-claro: #8a8ff5;
     --color-normal-texto: #fff;
     --radio-borde: 7px;
+    --fuente-size: 20px;
 }
 
 .nav {
@@ -28,7 +29,7 @@
     display: inline-block;
     text-decoration: none;
     color: var(--color-normal-texto);
-    font-size: 20px;
+    font-size: var(--fuente-size);
     padding: 10px 20px;
     font-family: 'Dosis', sans-serif;
 }
@@ -70,7 +71,7 @@
     border-left: 1px solid var(--nav-azul-oscuro);
     border-right: 1px solid var(--nav-azul-oscuro);
     font-family: 'Dosis', sans-serif;
-    font-size: 20px;
+    font-size: var(--fuente-size);
 }
 
 .subnav__li:first-child .subnav__a {
@@ -84,9 +85,6 @@
     border-bottom-right-radius: var(--radio-borde);
     border-bottom: 1px solid var(--nav-azul-oscuro);
 }
-
-
-
 
 .subnav__a:hover {
     background: var(--nav-azul-oscuro);

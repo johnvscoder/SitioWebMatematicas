@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - EduMat</title>
+    <title>Artículo - EduMat</title>
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="/styles/nav.css">
-    <link rel="stylesheet" href="/styles/poster.css">
-    <link rel="stylesheet" href="/styles/tarjeta.css">
     <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/articulo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600;700&display=swap" rel="stylesheet">
@@ -77,45 +76,45 @@
         </nav>
     </header>
     <main>
-        <section class="poster">
-            <div class="poster__div">
-                <h1 class="poster__titulo">Bienvenido a EduMat</h1>
-                <p class="poster__p">En este sitio web aprenderás matemáticas de forma fácil y eficaz.
-                Encontrarás explicaciones, ejemplos resueltos y problemas para practicar con soluciones.</p>
-            </div>
-            <div class="poster__div">
-                <h2 class="poster__titulo">Contenido adaptado para estudiantes</h2>
-                <p class="poster__p">Si eres estudiante y necesitas ayuda con tus clases, estás en un excelente lugar.</p>
-            </div>
-            <div class="poster__div">
-                <h2 class="poster__titulo">Excelente para autodidactas</h2>
-                <p class="poster__p">Tenemos problemas propuestos por cada tema para que practiques y consolides tus conocimientos.</p>
-            </div>
-        </section>
-        <section class="tarjeta">
-            <h2 class="tarjeta__titulo">Conjuntos numéricos</h2>
-            <p class="tarjeta__contenido">En matemáticas usamos varios conjuntos de números: los naturales \(\mathbb N\), los enteros \(\mathbb Z\),
-                los racionales \(\mathbb Q\), entre otros. Aprende las propiedades básicas de estos números y de las operaciones
-                básicas entre ellos.
-            </p>
-            <a class="tarjeta__enlace" href="">Ir al tutorial</a>
-        </section>
-        <section class="tarjeta">
-            <h2 class="tarjeta__titulo">Ecuaciones lineales</h2>
-            <p class="tarjeta__contenido">Las ecuaciones lineales son de la forma: \(ax + b = c\) donde 
-                \(a\), \(b\) y \(c\) \(\in \mathbb R\) y \(a \ne 0\). Aprende a resolver ecuaciones lineales
-                desde cero hasta resolver problemas básicos.
-            </p>
-            <a class="tarjeta__enlace" href="">Ir al tutorial</a>
-        </section>
-        <section class="tarjeta">
-            <h2 class="tarjeta__titulo">Derivadas</h2>
-            <p class="tarjeta__contenido">
-                La derivada es un concepto del Cálculo que es útil en muchísimas cosas. Aprende qué es
-                la derivada de una función, los teoremas básicos y a resolver problemas con derivadas.
-            </p>
-            <a class="tarjeta__enlace" href="">Ir al tutorial</a>
-        </section>
+        <article class="articulo">
+            <h1 class="articulo__titulo">Ecuaciones lineales</h1>
+            <section class="articulo__cabecera">
+                <span class="articulo__cabecera-autor">Auto: John Villanueva</autor></span>
+                <span class="articulo__cabecera-fecha">Fecha de publicacion: <time datetime="2022-03-03">3 de marzo de 2022</time></span>
+                <span class="articulo__cabecera-actualizacion">Actualizado el: <time datetime="2022-03-03">3 de marzo de 2022</time></span>
+            </section>
+            <section class="articulo__contenido">
+                <section class="articulo__seccion">
+                    <h2 class="articulo__seccion-titulo">¿Qué es una ecuación lineal?</h2>
+                    <p>Una ecuación lineal es una igualdad que se parece a esto:
+                    \(ax+b=c\), siendo \(a\) y \(b\) los números que quieras, excepto que debe 
+                    cumplirse \(a! = 0\), es decir, \(a\) debe ser distinto de cero; \(x\) es 
+                    una <span class="articulo__bold">variable</span> y es un valor desconocido que queremos encontrar.
+                     Si \(a=0\), es decir, si \(a\) es igual a \(0\), entonces ya no es una
+                    ecuación lineal. Para que quede claro veamos ejemplos de ecuaciones lineales:
+                    </p>
+                    <ul class="articulo__ul">
+                        <li class="articulo__ul-li">\(3x+2=1\)</li>
+                        <li class="articulo__ul-li">\(5x+9=11\)</li>
+                        <li class="articulo__ul-li">\(-2x+1=10\)</li>
+                        <li class="articulo__ul-li">\(3h+-2=5\)</li>
+                        <li class="articulo__ul-li">\(-\alpha+2=-10\)</li>
+                    </ul>
+                    <p>Como puedes ver no sólo puedes usar \(x\) para escribir una variable,
+                        sino que también puedes usar las letras del alfabeto e incluso otros símbolos,
+                        como las letras griegas. Veamos ejemplos de ecuaciones que no son ecuaciones
+                        lineales:
+                    </p>
+                    <ul class="articulo__ul">
+                        <li class="articulo__ul-li">\(3x+2/x=1\) <span class="articulo__margin">\(x\)</span> aparece en el denominador de una división</li>
+                        <li class="articulo__ul-li">\(2x+sinx=pi\) <span class="articulo__margin">\(x\)</span> aparece en una función trigonométrica</li>
+                        <li class="articulo__ul-li">\(-2x+1=log(x)\) <span class="articulo__margin">\(x\)</span> aparece en una función logarítmica</li>
+                        <li class="articulo__ul-li">\(3h^2+-2=5\) <span class="articulo__margin">\(h\)</span> aparece elevado a una potencia</li>
+                        <li class="articulo__ul-li">\(-\sqrt \alpha+2=6\) <span class="articulo__margin">\(\alpha\)</span> aparece en una raíz</li>
+                    </ul>
+                </section>
+            </section>
+        </article>
     </main>
     <footer class="footer">
         <div class="footer__documentos">

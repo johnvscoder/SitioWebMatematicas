@@ -1,3 +1,7 @@
+:root {
+    --tarjeta-color-sombra: rgb(110, 110, 255);
+}
+
 .footer {
     display: flex;
     flex-wrap: wrap;
