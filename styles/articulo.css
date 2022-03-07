@@ -45,3 +45,8 @@
 .articulo__margin {
     margin-left: 25px;
 }
+
+.articulo__seccion-h3 {
+    margin-top: 15px;
+    font-size: 22px;
+}
