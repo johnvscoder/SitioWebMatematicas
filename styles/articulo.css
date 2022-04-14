@@ -50,3 +50,10 @@
     margin-top: 15px;
     font-size: 22px;
 }
+
+.articulo__grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 200px 1fr;
+    gap: 20px 60px;
+}

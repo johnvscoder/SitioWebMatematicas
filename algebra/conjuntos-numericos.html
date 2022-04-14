@@ -19,7 +19,7 @@
     <header>
         <nav class="nav">
             <ul class="nav__ul">
-                <li class="nav__li"><a class="nav__a" href="">Inicio</a></li>
+                <li class="nav__li"><a class="nav__a" href="/index.html">Inicio</a></li>
                 <li class="nav__li"><a class="nav__a" href="">Índice</a></li>
                 <li class="nav__li">
                     <a class="nav__a" href="">Álgebra</a>
@@ -78,17 +78,17 @@
     <main>
         <article class="articulo">
             <h1 class="articulo__titulo">Ecuaciones lineales</h1>
-            <section class="articulo__cabecera">
-                <span class="articulo__cabecera-autor">Auto: John Villanueva</autor></span>
+            <div class="articulo__cabecera">
+                <span class="articulo__cabecera-autor">Autor: John Villanueva</span>
                 <span class="articulo__cabecera-fecha">Fecha de publicacion: <time datetime="2022-03-03">3 de marzo de 2022</time></span>
                 <span class="articulo__cabecera-actualizacion">Actualizado el: <time datetime="2022-03-03">3 de marzo de 2022</time></span>
-            </section>
-            <section class="articulo__contenido">
+            </div>
+            <div class="articulo__contenido">
                 <section class="articulo__seccion">
                     <h2 class="articulo__seccion-titulo">¿Qué es una ecuación lineal?</h2>
                     <p>Una ecuación lineal es una igualdad que se parece a esto:
-                    \(ax+b=c\), siendo \(a\) y \(b\) los números que quieras, excepto que debe 
-                    cumplirse \(a \ne 0\), es decir, \(a\) debe ser distinto de cero; \(x\) es 
+                    \(ax+b=c\), siendo \(a\) y \(b\) los números que quieras, excepto que debe
+                    cumplirse \(a \ne 0\), es decir, \(a\) debe ser distinto de cero; \(x\) es
                     una <span class="articulo__bold">variable</span> y es un valor desconocido que queremos encontrar.
                      Si \(a=0\), es decir, si \(a\) es igual a \(0\), entonces ya no es una
                     ecuación lineal. Para que quede claro veamos ejemplos de ecuaciones lineales:
@@ -143,23 +143,43 @@
                         hasta <em>despejar</em> la variable desconocida. Esas operaciones pueden ser sumas,
                         restas, multiplicaciones y divisiones. Veamos algunos ejemplos para clarificar esto.
                     </p>
-                    
+
                     <section>
                         <h3 class="articulo__seccion-h3">Ejemplo 1</h3>
-                        <p>\(2x+5=11\)</p>
-                        <h3 class="articulo__seccion-h3">Solución:</h3>
-                        <p>\(2x+5=11\) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La ecuación original</p>
-                       <p>\((2x+5)-5=11-5\) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Restamos 5 a ambos miembros
-                        de la ecuación. \(2x+5\) lo colocamos entre paréntesis para indicar que restamos 5 al
-                        <em>resultado</em> de \(2x+5\). \(2x+5\) es lo que resulta de sumar \(2x\) y  \(5\),
-                         y estamos restando 5 a ese resultado. 
-                       </p>
+                        <div class="articulo__grid">
+                            <span>
+                                \(2x+5=11\)
+                            </span>
+                            <p>
+                                La ecuación que queremos resolver.
+                            </p>
+                            <span>
+                                \((2x+5)-5=11-5\)
+                            </span>
+                            <p>
+                                Resulta que podemos sumar o restar un mismo número a ambos lados
+                                de una ecuación, y la ecuación resultante será igualmente válida.
+                            </p>
+                            <span>
+                                \(2x+(5-5)=11-5\)
+                            </span>
+                            <p>
+                                En el <em>miembro izquierdo</em> (lo que está a la izquierda del signo  \(=\))
+                                en este caso es una combinación de sumas y restas, las cuales siempre pueden
+                                resolverse en cualquier orden y el resultado es el mismo. En este caso,
+                                decidimos asociar el número \(5\) con la resta \(-5\) para efectuar
+                                dicha resta. Hacemos esto para eliminar el \(5\) del miembro izquierdo.
+                            </p>
+                            <span>
+                                \(\)
+                            </span>
+                        </div>
                     </section>
-                    
-                    
-                    
+
+
+
                 </section>
-            </section>
+            </div>
         </article>
     </main>
     <footer class="footer">
