@@ -143,7 +143,6 @@
                         hasta <em>despejar</em> la variable desconocida. Esas operaciones pueden ser sumas,
                         restas, multiplicaciones y divisiones. Veamos algunos ejemplos para clarificar esto.
                     </p>
-
                     <section>
                         <h3 class="articulo__seccion-h3">Ejemplo 1</h3>
                         <div class="articulo__grid">
@@ -263,9 +262,138 @@
                             ahora sabemos que nuestra solución es correcta.
                         </p>
                     </section>
-
-
-
+                    <section>
+                        <h3 class="articulo__seccion-h3">Ejemplo 2</h3>
+                        <div class="articulo__grid">
+                            <span>
+                                \(5x-11=9\)
+                            </span>
+                            <p>
+                                La ecuación que queremos resolver.
+                            </p>
+                            <span>
+                                \((5x-11)+11=9+11\)
+                            </span>
+                            <p>
+                                Lo que hicimos aquí fue sumar \(11\) a ambos lados de la ecuación para cancelar
+                            el término \(-11\) que aparece en el miembro izquierdo de la ecuación.
+                            </p>
+                            <span>
+                                \((5x+(-11))+11=9+11\)
+                            </span>
+                            <p>
+                                Hemos reemplazado la resta \(5x-11\) del miembro izquierdo por la suma
+                                de \(5x\) y \(-11\) ya que en álgebra definimos la resta como una suma. 
+                                La resta \(a-b\) significa que sumamos \(a\) y el <em>opuesto</em> de \(b\),
+                                es decir, \(-b\). Entonces \(a-b\) significa \(a+(-b)\)  
+                            </p>
+                            <span>
+                                \(5x+((-11)+11)=9+11\)
+                            </span>
+                            <p>
+                                Aquí hemos aprovechado la propiedad asociativa de la suma: 
+                                \((a+b)+c=a+(b+c)\). Esto significa que podemos sumar 3 números
+                                ya sea sumando los dos primeros y luego el tercero, o sumando los
+                                dos últimos y luego con el primero. El resultado en ambos casos 
+                                <em>siempre</em> es el mismo. Por ejemplo, observa que
+                                \((3+4)+5=7+5=12\) y también \(3+(4+5)=3+9=12\). Hemos sumado
+                                de las dos formas antes mencionadas, pero el resultado es \(12\)
+                                en ambos casos. Por todo lo antes dicho, nuestra nueva ecuación es 
+                                equivalente a la anterior, es decir, que tiene la misma solución.
+                            </p>
+                            <span>
+                                \(5x+0=20\)
+                            </span>
+                            <p>
+                                Hemos resuelto la suma \((-11)+11\) y el resultado es \(0\). No pusimos
+                                \((0)\), sino \(0\) porque en este caso no hay operaciones entre los
+                                parentesis y las operaciones quedan claras. También resolvimos la suma
+                                del miembro derecho, que da a \(20\)
+                            </p>
+                            <span>
+                                \(5x=20\)
+                            </span>
+                            <p>
+                                Ya que al sumar \(0\) a cualquier cantidad el resultado es la misma
+                                cantidad, podemos omitir el \(+0\) en el miembro izquierdo de la
+                                ecuación
+                            </p>
+                            <span>
+                                \((5x)/5=20/5\)
+                            </span>
+                            <p>
+                                Hemos dividido por \(5\) ambos miembros de la ecuación para cancelar
+                                el \(5\) que acompaña a la \(x\)
+                            </p>
+                            <span>
+                                \((5/5)\cdot x=20/5\)
+                            </span>
+                            <p>
+                                Puesto que teníamos en el miembro multiplicaciones y divisiones
+                                (recuerda que \(5x\) es en realidad la multiplicación \(5\cdot x\)),
+                                podemos asociarlas y ordenadas de cualquier forma. Esto es por las
+                                propiedades asociativa y conmutativa del producto:
+                                \((a\cdot b)\cdot c = a\cdot (b\cdot c)\) y \(a\cdot b=b\cdot a\),
+                                respectivamente. La primera es igual que la propiedad asociativa de la suma
+                                explicada en un paso anterior y la segunda dice que podemos 2 números en 
+                                cualquier orden y el resultado es el mismo. Por ejemplo,
+                                \((3\cdot 4)\cdot 5=12\cdot5=60\) y \(3\cdot (4\cdot 5)=3\cdot 20=60\).
+                                También \(6\cdot 7= 42\) y \(7\cdot 6=42\)
+                            </p>
+                            <span>
+                                <span class="articulo__respuesta">
+                                    \(x=3\)
+                                </span>
+                            </span>
+                            <p>
+                                En el paso anterior teníamos la cantidad \(x\) multiplicada por \(1\),
+                                (obverva \(1\cdot x\)) en el paso anterior). Siempre que multiplicamos
+                                una cantidad por \(1\), el resultado es esa misma cantidad, así que
+                                podemos reemplazar \(1\cdot x\) por \(x\).
+                            </p>
+                        </div>
+                        <h3 class="articulo__seccion-h3">Comprobación</h3>
+                        <p>Para comprobar que nuestra respuesta sea la correcta, reemplazamos
+                        en la ecuación original el valor de \(x\) que hallamos y realizamos las
+                        operaciones necesarias. Si obtenemos una igualdad válida entonces nuestra
+                        solución es correcta. Caso contrario cometimos algún error en el
+                        procedimiento.</p>
+                        <div class="articulo__grid">
+                            <span>
+                                \(2x+5=11\)
+                            </span>
+                            <p>
+                                La ecuación original
+                            </p>
+                            <span>
+                                \(2(3)+5=11\)
+                            </span>
+                            <p>
+                                Reemplazamos \(x\) por la solución encontrada, a saber, \(3\)
+                            </p>
+                            <span>
+                                \(6+5=11\)
+                            </span>
+                            <p>
+                                Teníamos en el paso anterior una multiplicación y una suma en el
+                                miembro izquierdo. Esas son operaciones combinadas. En éstas
+                                siempre resolvemos primero las multipicaciones, por lo cual
+                                calculamos \(2(3)=6\) y reemplazamos en la ecuación
+                            </p>
+                            <span class="articulo__respuesta">
+                                <span>
+                                    \(11=11\)
+                                </span>
+                            </span>
+                            <p>
+                                En este paso lo que hicimos fue realizar la suma \(6+5=11\)
+                            </p>
+                        </div>
+                        <p>
+                            Vemos que obtuvimos una igualdad válida (\(11=11\)), por lo cual
+                            ahora sabemos que nuestra solución es correcta.
+                        </p>
+                    </section>
                 </section>
             </div>
         </article>
