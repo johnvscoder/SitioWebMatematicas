@@ -8,34 +8,35 @@
     padding: 10px;
     /* background: linear-gradient(to bottom, #fff, var(--nav-azul-mas-claro)); */
     background: #fff;
-    color: var(--nav-azul-oscuro);
-    border: 1px solid var(--nav-azul-oscuro);
+    color: #000;
     border-radius: var(--radio-borde);
 }
 
 .tarjeta__titulo {
-    font-size: 30px;
+    font-size: 27px;
     margin-bottom: 5px;
 }
 
 .tarjeta__contenido {
     font-size: 20px;
+    margin-bottom: 3px;
 }
 
 .tarjeta__enlace {
     font-size: 20px;
-    text-decoration: underline solid var(--nav-azul-oscuro);
+    text-decoration: underline solid #000;
     font-weight: bold;
 }
 
 .tarjeta__enlace:link {
-    color: var(--nav-azul-claro);
+    color: #000;
 }
 
 .tarjeta__enlace:visited {
-    color: var(--nav-azul-oscuro);
+    color: #000;
+    text-decoration: underline solid #000;
 }
 
 .tarjeta__enlace:hover {
-    text-shadow: 0 0 3px var(--tarjeta-color-sombra);
+    text-shadow: 0 0 3px #999;
 }

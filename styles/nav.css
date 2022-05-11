@@ -66,7 +66,7 @@
     display: block;
     text-decoration: none;
     background: var(--color-normal-texto);
-    color: var(--nav-azul-oscuro);
+    color: #000;
     padding: 10px;
     border-left: 1px solid var(--nav-azul-oscuro);
     border-right: 1px solid var(--nav-azul-oscuro);
