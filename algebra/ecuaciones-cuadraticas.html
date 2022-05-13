@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuaciones cuadráticas - EduMat</title>
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/articulo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://kit.fontawesome.com/e82fe7fdac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"><a class="nav__a" href="/index.html">Inicio</a></li>
+                <li class="nav__li"><a class="nav__a" href="">Índice</a></li>
+                <li class="nav__li">
+                    <a class="nav__a" href="">Álgebra</a>
+                    <ul class="subnav">
+                        <li class="subnav__li"><a href="/algebra/ecuaciones-lineales.html" class="subnav__a">Ecuaciones lineales</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Ecuaciones cuadráticas</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Porcentajes</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Proporciones</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Más</a></li>
+                    </ul>
+                </li>
+                <li class="nav__li">
+                    <a class="nav__a" href="">Aritmética</a>
+                    <ul class="subnav">
+                        <li class="subnav__li"><a href="" class="subnav__a">Múltiplos y divisores</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Números primos</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">División entera</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Sumas y restas</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Más</a></li>
+                    </ul>
+                </li>
+                <li class="nav__li">
+                    <a class="nav__a" href="">Geometría</a>
+                    <ul class="subnav">
+                        <li class="subnav__li"><a href="" class="subnav__a">Términos primitivos</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Segmentos</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Ángulos</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Triángulos</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Más</a></li>
+                    </ul>
+                </li>
+                <li class="nav__li">
+                    <a class="nav__a" href="">Álgebra Lineal</a>
+                    <ul class="subnav">
+                        <li class="subnav__li"><a href="" class="subnav__a">Sistemas de ecuaciones lineales</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Vectores en \(\mathbb R^2\) y \(\mathbb R^3\)</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">División entera</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Sumas y restas</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Más</a></li>
+                    </ul>
+                </li>
+                <li class="nav__li">
+                    <a class="nav__a" href="">Cálculo</a>
+                    <ul class="subnav">
+                        <li class="subnav__li"><a href="" class="subnav__a">Funciones</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Definición \(&epsilon; - &delta;\) de límite</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Teoremas de límites</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Derivadas</a></li>
+                        <li class="subnav__li"><a href="" class="subnav__a">Más</a></li>
+                    </ul>
+                </li>
+                <li class="nav__li"><a class="nav__a" href="">Sobre mí</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="articulo">
+            <h1 class="articulo__titulo">Ecuaciones cuadráticas</h1>
+            <div class="articulo__cabecera">
+                <span class="articulo__cabecera-autor">Autor: John Villanueva</span>
+                <span class="articulo__cabecera-fecha">Fecha de publicacion: <time datetime="2022-05-12">12 de mayo de 2022</time></span>
+                <span class="articulo__cabecera-actualizacion">Actualizado el: <time datetime="2022-05-12">12 de mayo de 2022</time></span>
+            </div>
+            <div class="articulo__contenido">
+                <section class="articulo__seccion">
+                    <h2 class="articulo__seccion-titulo">¿Qué es una ecuación cuadrática?</h2>
+                    <p>Una ecuación  es una igualdad que tiene esta forma: \(ax^2+bx+c=0\).
+                        Los valores \(a\), \(b\) y \(c\) pueden ser cada uno cualquier número, con la excepción que
+                        \(a\ne 0\), mientras que \(x\) es un valor desconocido que se desea encontrar
+                        y se llama <em>variable</em>.
+                        Algunos ejemplos de ecuaciones lineales son los siguientes:
+                    </p>
+                    <ul class="articulo__ul">
+                        <li class="articulo__ul-li">\(x^2+2x+1=0\)</li>
+                        <li class="articulo__ul-li">\(5t^2+9t=0\)</li>
+                        <li class="articulo__ul-li">\(-a^2-a+2=0\)</li>
+                        <li class="articulo__ul-li">\(z^2+1=0\)</li>
+                        <li class="articulo__ul-li">\(\beta^2+\beta+1=0\)</li>
+                    </ul>
+                    <p> Como se ve en los ejemplos anteriores, cualquier símbolo es válido para representar
+                        la variable, y no solamente la \(x\).
+                    </p>
+                    <p>
+                        A continuación algunos ejemplos de ecuaciones no cuadráticas y la razón por la cual no son ecuaciones cuadráticas:
+                    </p>
+                    <ul class="articulo__ul">
+                        <li class="articulo__ul-li">\(1/x^2+2=0\) <span class="articulo__margin">\(x^2\) aparece como un denominador en la ecuación</span></li>
+                        <li class="articulo__ul-li">\(-\theta^2-cos(\theta)=0\) <span class="articulo__margin">La variable \(\theta\) aparece en una función trigonométrica, en \(cos(\theta)\)</span></li>
+                        <li class="articulo__ul-li">\(2z+10=0\) <span class="articulo__margin">\(z^2\) no aparece en la ecuación</span></li>
+                        <li class="articulo__ul-li">\(-2h^3+h^2-3h+10=0\) <span class="articulo__margin">\(h^3\) aparece en la ecuación</span></li>
+                        <li class="articulo__ul-li">\(log(b^2)+b+1=0\) <span class="articulo__margin">\(b^2\) aparece en una función logarítmica, en \(log(b^2)\)</span></li>
+                    </ul>
+                </section>
+                <section class="articulo__seccion">
+                    <h2 class="articulo__seccion-titulo">¿Para qué sirven las ecuaciones cuadráticas?</h2>
+                    <p>
+                        Las ecuaciones cuadráticas se usan en las ciencias ampliamante para describir observaciones y
+                        fenómenos de la naturaleza. Muchas situaciones y problemas pueden ser resueltos usando
+                        ecuaciones cuadráticas.
+                    </p>
+                </section>
+                <section class="articulo__seccion">
+                    <h2 class="articulo__seccion-titulo">¿Cómo resolver una ecuación cuadrática?</h2>
+                    <p>Hay varios métodos para resolver ecuaciones cuadráticas. En este artículo aprenderemos
+                        el <em>método de tanteo</em>. Se requiere que \(x^2\) o cualquiera que sea el símbolo al cuadrado,
+                        no esté acompañado de un número distinto de \(1\).
+                        A continuación se resuelven algunas ecuaciones cuadráticas y se explica el
+                        procedimiento seguido:
+                    </p>
+                    <section>
+                        <h3 class="articulo__seccion-h3">Ejemplo 1</h3>
+                        <div class="articulo__grid">
+                            <span>
+                                \(x^2+5x+10=0\)
+                            </span>
+                            <span></span>
+                            <span>
+                                
+                                
+                                \((x\)<span class="espacio-expresion"></span>\()(x\)<span class="espacio-expresion"></span>\()=0\) 
+                            </span>
+                            <p>
+                                Restamos \(5\) a ambos lados de la ecuación para cancelar el \(+5\)
+                                del lado izquierdo.
+                            </p>
+                            <span>
+                                \((x+2)(x+3)=0\)
+                            </span>
+                            <p>
+                                Resolvemos la resta \(5-5\) del lado izquierdo de la ecuación y la resta
+                                \(11-5\) del lado derecho de la ecuación.
+                            </p>
+                            <span>
+                                \(2x=6\)
+                            </span>
+                            <p>
+                                Quitamos el \(+0\) del miembro izquierdo y dejamos \(2x\) porque al sumar \(0\) a 
+                                cualquier cantidad dicha cantidad no cambia.
+                            </p>
+                            <span>
+                                \(2x/2=6/2\)
+                            </span>
+                            <p>
+                                Dividimos ambos lados de la ecuación por \(2\) para cancelar
+                                el \(2\) que está en \(2x\).
+                            </p>
+                            <span>
+                                \(1x=3\)
+                            </span>
+                            <p>
+                                Resolvimos la división \(2/2\) del miembro izquierdo de la ecuación
+                                y la división \(6/2\) del miembro derecho de la ecuación.
+                            </p>
+                            <span>
+                                \(x=3\)
+                            </span>
+                            <p>
+                                Quitamos el \(1\) del miembro izquierdo y dejamos la \(x\) porque
+                                cualquier cantidad multiplicada por 1 resulta en la misma cantidad.
+                                Con esto hemos resuelto la ecuación.
+                            </p>
+                        </div>
+                        <h3 class="articulo__seccion-h3">Comprobación</h3>
+                        <p>Podemos sustituar el valor hallado en la ecuación para verificar
+                            que nuestra respuesta es correcta:
+                        </p>
+                        <div class="articulo__grid">
+                            <span>
+                                \(2x+5=11\)
+                            </span>
+                            <span></span>
+                            <span>
+                                \(2(3)+5=11\)
+                            </span>
+                            <p>
+                                Reemplazadmos \(x\) por \(3\), que es nuestra respuesta.
+                            </p>
+                            <span>
+                                \(6+5=11\)
+                            </span>
+                            <p>
+                                Multiplicamos \(2\) por \(3\).
+                            </p>
+                            <span>
+                                \(11=11\)
+                            </span>
+                            <p>
+                                Sumamos \(6\) y \(5\). Hemos comprobado que nuestra respuesta es correcta.
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="articulo__seccion-h3">Ejemplo 2</h3>
+                        <div class="articulo__grid">
+                            <span>
+                                \(5y-11=9\)
+                            </span>
+                            <span></span>
+                            <span>
+                                \(5y-11+11=9+11\)
+                            </span>
+                            <p>
+                                Sumamos \(11\) a ambos lados de la ecuación para cancelar el \(-11\).
+                            </p>
+                            <span>
+                                \(5y+0=20\)
+                            </span>
+                            <p>
+                                Realizamos la suma \(-11+11\) en el miembro izquierdo y la suma
+                                \(9+11\) en el miembro derecho.
+                            </p>
+                            <span>
+                                \(5y=20\)
+                            </span>
+                            <p>
+                                Quitamos el \(+0\) del miembro izquierdo y dejamos \(5y\) porque
+                                al sumarle \(0\) a cualquier cantidad resulta en la misma cantidad.
+                            </p>
+                            <span>
+                                \(5y/5=20/5\)
+                            </span>
+                            <p>
+                                Dividimos ambos lados de la ecuación por \(5\) para cancelar el \(5\)
+                                que está en \(5y\) en el miembro izquierdo de la ecuación.
+                            </p>
+                            <span>
+                                \(1y=4\)
+                            </span>
+                            <p>
+                                Realizamos la división \(5/5\) en el miembro izquierdo de la ecuación
+                                y la división \(20/5\) en el miembro derecho de la ecuación.
+                            </p>
+                            <span>
+                                \(y=4\)
+                            </span>
+                            <p>
+                                Quitamos el \(1\) del miembro izquierdo de la ecuación y dejamos 
+                                \(y\) porque cualquier cantidad multiplicada por \(1\) resulta en esa misma
+                                cantidad. Hemos resuelto la ecuación.
+                            </p>
+                        </div>
+                        <h3 class="articulo__seccion-h3">Comprobación</h3>
+                        <div class="articulo__grid">
+                            <span>
+                                \(5y-11=9\)
+                            </span>
+                            <span></span>
+                            <span>
+                                \(5(4)-11=9\)
+                            </span>
+                            <p>
+                                Reemplazamos \(y\) por \(4\), que es nuestra respuesta.
+                            </p>
+                            <span>
+                                \(20-11=9\)
+                            </span>
+                            <p>
+                                Multiplicamos \(5\) por \(4\).
+                            </p>
+                            <span>
+                                \(9=9\)
+                            </span>
+                            <p>
+                                Realizamos la resta \(20-11\). Hemos comprobado que nuestra respuesta
+                                es correcta.
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="articulo__seccion-h3">Ejemplo 3</h3>
+                        <div class="articulo__grid">
+                            <span>
+                                \(3+4g=19\)
+                            </span>
+                            <span></span>
+                            <span>
+                                \(3+4g-3=19-3\)
+                            </span>
+                            <p>
+                                Restamos \(3\) a ambos lados de la ecuación para cancelar el \(3\) 
+                                del lado izquierdo de la ecuación.
+                            </p>
+                            <span>
+                                \(3-3+4g=19-3\)
+                            </span>
+                            <p>
+                                En el lado izquierdo de la ecuación se intercambiaron los términos \(+4g\) y
+                                \(-3\) para después hacer la resta \(3-3\) que apareció en el lado izquierdo
+                                de la ecuación.
+                                Note que \(-3\) en el lado izquierdo de la ecuación se movió con su signo \(-\).
+                            </p>
+                            <span>
+                                \(0+4g=16\)
+                            </span>
+                            <p>
+                                Realizamos la resta \(3-3\) en el lado izquierdo de la ecuación y 
+                                la resta \(19-3\) en el lado derecho de la ecuación.
+                            </p>
+                            <span>
+                                \(4g=16\)
+                            </span>
+                            <p>
+                                Puesto que cualquier cantidad sumada con \(0\) resulta en la misma cantidad,
+                                quitamos el \(0\) y el signo \(+\) en el lado izquierdo de la
+                                ecuación.
+                            </p>
+                            <span>
+                                \(4g/4=16/4\)
+                            </span>
+                            <p>
+                                Dividimos ambos lados de la ecuación por \(4\) para cancelar el \(4\) que
+                                acompaña a \(4g\) en el lado izquierdo de la ecuación.
+                            </p>
+                            <span>
+                                \(1g=4\)
+                            </span>
+                            <p>
+                                Realizamos la división \(4/4\) en el lado izquierdo de la ecuación y la división
+                                \(16/4\) en el lado derecho de la ecuación.
+                            </p>
+                            <span>
+                                \(g=4\)
+                            </span>
+                            <p>
+                                Puesto que cualquier cantidad multiplicada por \(1\) resulta en la misma cantidad,
+                                omitimos el \(1\) en el lado izquierdo de la ecuación. Hemos resuelto la
+                                ecuación.
+                            </p>
+                        </div>
+                        <h3 class="articulo__seccion-h3">Comprobación</h3>
+                        <div class="articulo__grid">
+                            <span>
+                                \(3+4g=19\)
+                            </span>
+                            <span></span>
+                            <span>
+                                \(3+4(4)=19\)
+                            </span>
+                            <p>
+                                Reemplazamos \(g\) por \(4\), que es nuestra respuesta.
+                            </p>
+                            <span>
+                                \(3+16=19\)
+                            </span>
+                            <p>
+                                Multiplicamos \(4\) por \(4\) en el lado izquierdo de la ecuación.
+                            </p>
+                            <span>
+                                \(19=19\)
+                            </span>
+                            <p>
+                                Realizamos la suma \(3+16\) en lado izquierdo de la ecuación.
+                                Hemos comprobado que nuestra respuesta es correcta.
+                            </p>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="articulo__seccion-h3">Ejemplo 4</h3>
+                        <div class="articulo__grid">
+                            <span>
+                                \(6-9\alpha=24\)
+                            </span>
+                            <span></span>
+                            <span>
+                                \(6-9\alpha-6=24-6\)
+                            </span>
+                            <p>
+                                Restamos \(6\) a ambos lados de la ecuación para cancelar el \(6\) 
+                                del lado izquierdo de la ecuación.
+                            </p>
+                            <span>
+                                \(6-6-9\alpha=24-6\)
+                            </span>
+                            <p>
+                                En el lado izquierdo de la ecuación se intercambiaron los términos \(-9\alpha\) y
+                                \(-6\) para después hacer la resta \(6-6\) que apareció en el lado izquierdo
+                                de la ecuación.
+                                Note que \(-9\alpha\) y \(-6\) se movieron con su signo \(-\).
+                            </p>
+                            <span>
+                                \(0-9\alpha=18\)
+                            </span>
+                            <p>
+                                Realizamos la resta \(6-6\) en el lado izquierdo de la ecuación y 
+                                la resta \(24-6\) en el lado derecho de la ecuación.
+                            </p>
+                            <span>
+                                \(-9\alpha=18\)
+                            </span>
+                            <p>
+                                Puesto que cualquier cantidad sumada con \(0\) resulta en la misma cantidad,
+                                quitamos el \(0\) en el lado izquierdo de la ecuación.
+                            </p>
+                            <span>
+                                \(-9\alpha/(-9)=18/(-9)\)
+                            </span>
+                            <p>
+                                Dividimos ambos lados de la ecuación por \(-9\) para cancelar el \(-9\) que
+                                acompaña a \(-9\alpha\) en el lado izquierdo de la ecuación.
+                            </p>
+                            <span>
+                                \(1\alpha=-2\)
+                            </span>
+                            <p>
+                                Realizamos la división \((-9)/(-9)\) en el lado izquierdo de la ecuación y la división
+                                \(18/(-9)\) en el lado derecho de la ecuación.
+                            </p>
+                            <span>
+                                \(\alpha=-2\)
+                            </span>
+                            <p>
+                                Puesto que cualquier cantidad multiplicada por \(1\) resulta en la misma cantidad,
+                                omitimos el \(1\) en el lado izquierdo de la ecuación. Hemos resuelto la
+                                ecuación.
+                            </p>
+                        </div>
+                        <h3 class="articulo__seccion-h3">Comprobación</h3>
+                        <div class="articulo__grid">
+                            <span>
+                                \(6-9\alpha=24\)
+                            </span>
+                            <span></span>
+                            <span>
+                                \(6-9(-2)=24\)
+                            </span>
+                            <p>
+                                Reemplazamos \(\alpha\) por \(-2\), que es nuestra respuesta.
+                            </p>
+                            <span>
+                                \(6+18=24\)
+                            </span>
+                            <p>
+                                Multiplicamos \(-9\) por \(-2\) en el lado izquierdo de la ecuación.
+                                La multiplicación de dos números negativos es un número positivo, por eso
+                                se escribió \(+18\) y no \(-18\) en el lado izquierdo de la ecuación.
+                            </p>
+                            <span>
+                                \(24=24\)
+                            </span>
+                            <p>
+                                Realizamos la suma \(6+18\) en lado izquierdo de la ecuación.
+                                Hemos comprobado que nuestra respuesta es correcta.
+                            </p>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="footer__documentos">
+            <ul class="footer__documentos-ul">
+                <li class="footer__documentos-li"><a class="footer__documentos-a" href="">Temas por categorías</a></li>
+                <li class="footer__documentos-li"><a class="footer__documentos-a" href="">Artículos relevantes</a></li>
+                <li class="footer__documentos-li"><a class="footer__documentos-a" href="">Contacto</a></li>
+                <li class="footer__documentos-li"><a class="footer__documentos-a" href="">Sobre mí</a></li>
+            </ul>
+        </div>
+        <div class="footer__redes">
+            <span class="footer__redes-texto">Mis redes sociales</span> <br>
+            <ul class="footer__redes-ul">
+                <li class="footer__redes-li"><a href=""><i class="fa-brands fa-facebook fa-2xl footer__redes-icono"></i></a></li>
+                <li class="footer__redes-li"><a href=""><i class="fa-brands fa-instagram fa-2xl footer__redes-icono"></i></a></li>
+                <li class="footer__redes-li"><a href=""><i class="fa-brands fa-linkedin fa-2xl footer__redes-icono"></i></a></li>
+                <li class="footer__redes-li"><a href=""><i class="fa-brands fa-whatsapp fa-2xl footer__redes-icono"></i></a></li>
+            </ul>
+        </div>
+        <address class="footer__autor">Sitio web creado por John Villanueva</address>
+        <span class="footer__copyright">Derechos reservados &copy;</span>
+    </footer>
+</body>
+</html>
